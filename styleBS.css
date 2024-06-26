@@ -1,0 +1,237 @@
+   /* set the scrolling to be smooth for the doc */
+   html {
+       scroll-behavior: smooth;
+   }
+
+   /* span the whole page */
+   body {
+       margin: 0;
+   }
+
+   h1 {
+       font: arial;
+       size: 300%;
+       color: rgb(0, 170, 255);
+       font-weight: 600;
+   }
+
+   html {
+       background-color: black;
+   }
+
+   p {
+       font: arial;
+       color: white;
+       font-weight: 500;
+   }
+
+   hr {
+       border-color: rgb(0, 170, 255);
+   }
+
+   /* make the menu bar */
+   ul {
+       list-style-type: none;
+       /* no bullet */
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color: #333;
+       position: fixed;
+       top: 0;
+       width: 100%;
+   }
+
+   li {
+       float: left;
+   }
+
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+
+   li a:hover:not(.active) {
+       background-color: #111;
+   }
+
+   .active {
+       background-color: darkcyan;
+   }
+
+   .container1 {
+       font-size: 16px;
+       padding-top: 45px;
+       padding-left: 12px;
+       line-height: 12px;
+       margin-bottom: -5px;
+   }
+
+   .container2 {
+       font-size: 18px;
+       padding-left: 12px;
+       background-color: darkcyan;
+       width: 100%;
+   }
+
+   .container3 {
+       font-size: 22px;
+       text-align: center;
+       margin-bottom: 50px;
+   }
+
+   .container4 {
+       display: flex;
+       justify-content: center;
+
+   }
+
+   .zeroq {
+       font-size: 22px;
+       margin-bottom: -15px;
+       text-align: center;
+       animation: fadeIn1 infinite 7s;
+   }
+
+   @keyframes fadeIn1 {
+       from {
+           opacity: 1;
+       }
+
+       to {
+           opacity: 0;
+       }
+   }
+
+   .sphere {
+       position: absolute;
+       border-radius: 50%;
+       background: darkcyan;
+       width: 300px;
+       height: 300px;
+       margin: auto;
+       background: radial-gradient(circle at 100px 100px, darkcyan, rgb(0, 9, 9));
+   }
+
+   .arrow {
+       position: absolute;
+       width: 50%;
+       height: 3px;
+       left: 50%;
+       border-width: 0 2px 2px 0;
+       transform-origin: left center;
+       transform: rotate(-90deg);
+       /* |0> oriented rn */
+       background: white;
+       animation: linemove 7s infinite;
+   }
+
+   @keyframes linemove {
+       from {
+           top: 50%;
+       }
+
+       15% {
+           width: 17%;
+       }
+
+       to {
+           top: 98%;
+           width: 50%;
+       }
+   }
+
+   .arrow:after {
+       position: absolute;
+       content: '';
+       top: -10px;
+       /* puts it to top instead of ^ @ bottom */
+       width: 0;
+       height: 0;
+       border-top: 12px solid transparent;
+       border-bottom: 12px solid transparent;
+       border-left: 12px solid white;
+       animation: blochmove 7s infinite;
+   }
+
+   @keyframes blochmove {
+       from {
+           right: -2px;
+       }
+
+       to {
+           right: 142px;
+           rotate: 180deg
+       }
+   }
+
+   .oneq {
+       font-size: 22px;
+       text-align: center;
+       animation: fadeIn2 infinite 7s;
+       margin-top: 305px;
+   }
+
+   @keyframes fadeIn2 {
+       from {
+           opacity: 0;
+       }
+
+       to {
+           opacity: 1;
+       }
+   }
+
+   .WhatNxtBut {
+       border: none;
+       text-decoration: none;
+       font: arial;
+       background-color: darkcyan;
+       color: white;
+       font-weight: 500;
+       padding: 16px 32px;
+       font-size: 22px;
+       background-color: #333;
+       display: block;
+       margin: auto;
+   }
+
+   .WhatNxtBut:hover {
+       background-color: darkcyan;
+   }
+
+   .AboutUs {
+       padding: 200px;
+       font: arial;
+       color: white;
+       font-size: 22px;
+       text-align: center;
+       margin-bottom: -170px;
+   }
+
+   .FurtherAboutUs {
+       font: arial;
+       color: white;
+       font-size: 22px;
+       text-align: center;
+       margin-bottom: 75px;
+   }
+
+   .ExcerptHds {
+       font: arial;
+       color: rgb(0, 170, 255);
+       font-size: 32px;
+       padding-left: 200px;
+   }
+
+   .ExcerptExp {
+       font: arial;
+       color: white;
+       font-size: 22px;
+       padding-left: 230px;
+       margin-bottom: 50px;
+       padding-right: 75px;
+   }

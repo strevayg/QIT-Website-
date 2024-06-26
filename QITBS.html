@@ -1,0 +1,84 @@
+<!-- https://en.wikipedia.org/wiki/BB84#:~:text=BB84%20is%20a%20quantum%20key,the%20first%20quantum%20cryptography%20protocol. -->
+
+<DOCTYPE! html>
+
+    <head>
+        <title> QIT Visuals </title>
+        <!-- link the css stylesheet and javascript file -->
+        <script src="QIT.js"></script>
+        <link rel="stylesheet" type="text/css" href="/styleBS.css" />
+    </head>
+
+    <body>
+        <div class="container1">
+            <h1>
+                Quantum Information Theory Bloch Sphere and Cartesian Coordinates
+            </h1>
+        </div>
+
+        <!-- create the menu and set this page as the "home"-->
+        <ul>
+            <li><a class="active" href="QITBS.html">Home</a></li>
+            <li><a href="QITBB84.html">BB84</a></li>
+        </ul>
+
+        <!-- small credits tag at top -->
+        <div class="container2">
+            <p>
+                All Rights Reserved &copy; Authors: Gabby Strevay, so on &#9786;
+            </p>
+        </div>
+
+        <div class="container3">
+            <p>
+                |&Psi;> = &alpha;|0> + &beta;|1>
+            </p>
+        </div>
+        <div class="zeroq">
+            <p>|0></p>
+        </div>
+        <!-- creating the bloch sphere animation -->
+        <!-- ?? maybe go back and see if theres a better way in html and css -->
+        <div class="container4">
+            <figure class="sphere">
+                <span class="arrow"></span>
+            </figure>
+        </div>
+        <div class="oneq">
+            <p>|1></p>
+        </div>
+
+        <!-- create a scroll mechanism in js for thisbutton -->
+        <button class="WhatNxtBut" onclick="scrollFunction()">Where to start?</button>
+        <div class="AboutUs"> Hey all! ERAU 2023-2024 Quantum Information Theory QIT here. This is a website to help aid
+            in quantum mechanic visulization, understanding the syntax, and all that does not make any sense upon first
+            glance. We hope to help! :)
+        </div>
+        <div class="FurtherAboutUs">
+            Below is a small exerpt for each section seen in the menu
+        </div>
+        <div class="ExcerptHds">
+            Home
+        </div>
+        <div class="ExcerptExp">
+            Where you are currently!
+        </div>
+
+        <div class="ExcerptHds">
+            BB84
+        </div>
+        <div class="ExcerptExp">
+            Goes into the first quantum key distribution technique known as BB84 protocol and a visualization technique
+             to help give an understanding to how information may be transmitted via a quantum channel. Gaining its 
+             name from its developers Charles Bennett and Gilles Brassard in 1984.
+        </div>
+        <div class="ExcerptHds">
+            QEC
+        </div>
+        <div class="ExcerptExp">
+           Standing for quanum error correction. This section goes into the no cloning theorem and the visulization 
+           of the mathematical proof behind such.
+        </div>
+    </body>
+
+    </html>
