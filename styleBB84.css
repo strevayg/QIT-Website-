@@ -1,5 +1,6 @@
  body {
    margin: 0;
+   min-height: 100vh;
  }
 
  h1 {
@@ -103,7 +104,7 @@
    margin-bottom: -10px;
  }
 
-.keys {
+ .keys {
    margin-left: auto;
    margin-right: auto;
    display: block;
@@ -111,32 +112,33 @@
    line-height: .75;
    font-size: 22px;
    text-align: center;
+   border-collapse: collapse;
  }
 
- 
-
- .keys {
-  border-collapse: collapse;
+ .container8 {
+   margin-bottom: 50px;
  }
+
  td {
-  padding-left: 78px;
+   padding-left: 78px;
  }
 
  .whatsnextbut {
-  border: none;
-  text-decoration: none;
-  font: arial;
-  background-color: darkcyan;
-  color: white;
-  font-weight: 500;
-  padding-left: 0;
-  font-size: 26px;
-  background-color: #333;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
+   border: none;
+   line-height: 1;
+   text-decoration: none;
+   font: arial;
+   background-color: darkcyan;
+   color: white;
+   font-weight: 500;
+   padding-left: 0;
+   font-size: 26px;
+   background-color: #333;
+   display: block;
+   margin: auto;
+   text-align: center;
+ }
 
-.whatsnextbut:hover {
-  background-color: darkcyan;
-}
+ .whatsnextbut:hover {
+   background-color: darkcyan;
+ }
